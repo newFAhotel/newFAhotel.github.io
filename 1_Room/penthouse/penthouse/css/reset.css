@@ -1,0 +1,85 @@
+html {
+  overflow: overlay;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(153, 102, 0, 0.8);
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333333;
+  font-family: "SCoreDream";
+  font-weight: 200;
+  font-size: 1.125em;
+}
+
+.wrapper {
+  width: 100%;
+  color: white;
+}
+
+.container {
+  width: 89.74358974358974%;
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  font-family: "SCoreDream";
+  font-weight: 100;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 7.5em;
+  font-weight: 200;
+  font-family: "SCoreDream";
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+h5 {
+  font-weight: 200;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}

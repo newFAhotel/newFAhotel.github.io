@@ -1,0 +1,687 @@
+@import './style.scss';
+
+@mixin responsive($break) { // 지원 최소 크기 320px
+    @if $break == mobile-screens {
+        @media screen and (min-width: $break-mobile) {
+            @content;
+        }
+    }
+
+    @else if $break == screen-800 {  // 이것은 br을 없애기 위해 사용된 값입니다. 사용 시 조장에 허락을 맡으시길 바랍니다.
+        @media screen and (min-width:$break-middle) {
+            @content;
+        }
+    }
+
+
+    @else if $break == pc-screens { //중단점 1400px
+        @media screen and (min-width:$break-pc) {
+            @content;
+        }
+    }
+}
+
+@mixin video_matte { //비디오 매트(사진을 어둡게 처리)
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+//====================================서브페이지 통일안====================================//
+
+@mixin font_setting {  // a나 input 같이 직접적으로 초기화되기 어려운 태그에 사용
+    font: {
+        family: $common_font;
+        weight: 200;
+    }
+}
+
+@mixin title_border($b_width, $b_height, $b_color, $b_margin){
+    content: "";
+    display: block;
+    width: $b_width;
+    border-bottom: $b_height solid $b_color;
+    margin: $b_margin auto;
+}
+
+@mixin title_border_2($b_width, $b_height, $b_color, $b_margin, $u_margin){
+    content: "";
+    display: block;
+    width: $b_width;
+    border-bottom: $b_height solid $b_color;
+    margin: 0 0 $u_margin $b_margin;
+}
+
+@mixin title_border_pc($b_margin, $u_margin){
+    margin: 0 0 $u_margin $b_margin;
+}
+
+@mixin type_custom($t_size, $t_font){
+    font: {
+        family: $t_font;
+        size: $t_size;
+    }
+}
+
+@mixin sub_h3 {
+    @include type_custom($bigf_title_m, $eng_title_font);
+    margin-bottom: calc(0.5em + 3vw);
+    text-align: center;
+    letter-spacing: 2px;
+    // margin-top: 125px;
+
+    @include responsive(pc-screens) {
+        font-size: $bigf_title;
+        margin-bottom: $mid_margin;
+    }
+}
+
+@mixin sub_h4 {
+    @include type_custom($bigf_sub_title_m, $eng_title_font);
+    margin-bottom: calc(0.5em + 2vw);
+    text-align: center;
+    letter-spacing: 2px;
+    // margin-top: 125px;
+
+    @include responsive(pc-screens) {
+        font-size: $bigf_sub_title;
+        margin-bottom: $small_margin;
+    }
+}
+
+//======================칼라 애니메이션=====================//
+
+@mixin color_rep_red {
+    @keyframes color_rep_red {
+        0% {
+            color: #a40000;
+        }
+    
+        25% {
+            color: #ff0000;
+        }
+    
+        50% {
+            color: #ff5f5f;
+        }
+    
+        75% {
+            color: #ff0000;
+        }
+    
+        100% {
+            color: #a40000;
+        }
+    }
+}
+
+
+@mixin color_rep_gold {
+    @keyframes color_rep_navy {
+        0% {
+            color: #2a52be;
+        }
+    
+        25% {
+            color: #0044ff;
+        }
+    
+        50% {
+            color: #5d88ff;
+        }
+    
+        75% {
+            color: #0044ff;
+        }
+    
+        100% {
+            color: #2a52be;
+        }
+    }
+}
+
+@mixin color_rep_navy {
+    @keyframes color_rep_gold {
+        0% {
+            color: #bd8400;
+        }
+    
+        25% {
+            color: #cdb200;
+        }
+    
+        50% {
+            color: #ffef5a;
+        }
+    
+        75% {
+            color: #cdb200;
+        }
+    
+        100% {
+            color: #bd8400;
+        }
+    }
+}
+
+//======================Book 부분=====================//
+
+@mixin mypage_margin {
+    margin-top: 35px;
+
+    @include responsive(pc-screens) {
+        margin-top: 20px;
+    }
+}
+
+@mixin mypage_h4 {
+    h4 {
+        @include sub_h4;
+        font-size: calc(1.2em + 1vw);
+        text-align: left;
+        margin-bottom: 0;
+        color: $base_color_dark;
+
+        @include responsive(pc-screens) {
+            font-size: $semif;
+            margin-bottom: 0;
+
+        }
+
+        &::before {
+            @include title_border_2(20px, 3px, $base_color_dark, 5px, 5px);
+            
+            @include responsive(pc-screens) {
+                @include title_border_2(20px, 3px, $base_color_dark, 5px, 5px);
+            }
+            
+        }                        
+    }
+}
+
+
+@mixin mypage_li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: calc(20px + 2vw);
+
+    @include responsive(pc-screens) {
+        margin-bottom: 40px;
+
+    }
+
+    &:first-child {
+        margin-top: calc(16px + 1vw);
+
+        @include responsive(pc-screens) {
+            margin-top: 30px;
+        }
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        background-color: $base_color_dark;
+        width: 4px;
+        height: calc(16px + 0.5vw);
+        margin-right: 10px;
+
+        @include responsive(pc-screens) {
+            width: 4px;
+            height: 20px;
+            margin-right: 15px;
+
+        }
+        
+
+    }
+    
+    .label_img {
+        width:10%;
+        max-width: 40px;
+        margin-right: calc(10px + 1vw);
+
+        @include responsive(pc-screens) {
+            width: 50px;
+            margin-right: 20px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .label_input {
+        width:85%;
+
+        @include responsive(pc-screens) {
+            width: 360px;
+        }
+        label {
+            p {
+                @include type_custom(calc(0.5em + 0.5vw), $common_font);
+                font-weight: 300;
+
+                @include responsive(pc-screens) {
+                    font-size: 12px;
+                }
+
+
+                span {
+                    @include type_custom(calc(10px + 0.8vw), $eng_title_font);
+                    letter-spacing: 2px;
+                    margin-right: 5px;
+
+                    @include responsive(pc-screens) {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            border-bottom: 2px solid rgba(66,45,19,0.8);
+            padding-bottom: 5px;
+            padding-top: 15px;
+            color: $base_color_dark;
+            font-family: $common_font;
+
+            @include responsive(pc-screens) {
+                //
+            }
+
+            &::placeholder {
+                font-family: $common_font;
+                color: rgba(66,45,19,0.8);
+
+                @include responsive(pc-screens) {
+                    //
+                }
+            }
+        }
+    } //.label_input
+}
+
+@mixin mypage_li_noimg {
+    position: relative;
+    margin-bottom: calc(10px + 2vw);
+
+    @include responsive(pc-screens) {
+        margin-bottom: 20px;
+    } 
+
+    &:first-child {
+        margin-top: calc(16px + 1vw);
+
+        @include responsive(pc-screens) {
+            margin-top: 30px;
+        }
+    }
+
+    label {
+        p {
+            @include type_custom(calc(10px + 1vw), $common_font);
+            font-weight: 400;
+
+            @include responsive(pc-screens) {
+                font-size: $mainf;
+            }
+        }
+    }
+
+    input {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        border-bottom: 2px solid rgba(66,45,19,0.8);
+        padding-bottom: 5px;
+        padding-top: 15px;
+        color: $base_color_dark;
+        font-family: $common_font;
+
+        @include responsive(pc-screens) {
+            //
+        }
+
+        &::placeholder {
+            font-family: $common_font;
+            color: rgba(66,45,19,0.8);
+
+            @include responsive(pc-screens) {
+                //
+            }
+        }
+    }
+
+
+
+
+}
+
+@mixin mypage_modal_li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: calc(10px + 2vw);
+
+    @include responsive(pc-screens) {
+        margin-bottom: 20px;
+
+    }
+
+    &:first-child {
+        margin-top: calc(8px + 1vw);
+
+        @include responsive(pc-screens) {
+            margin-top: 20px;
+        }
+    }
+    
+    .label_img {
+        width:10%;
+        max-width: 40px;
+        margin-right: calc(10px + 1vw);
+
+        @include responsive(pc-screens) {
+            width: 50px;
+            margin-right: 20px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .label_input {
+        width:85%;
+
+        @include responsive(pc-screens) {
+            width: 360px;
+        }
+        label {
+            p {
+                @include type_custom(calc(0.5em + 0.5vw), $common_font);
+                font-weight: 300;
+
+                @include responsive(pc-screens) {
+                    font-size: 12px;
+                }
+
+
+                span {
+                    @include type_custom(calc(10px + 0.8vw), $eng_title_font);
+                    letter-spacing: 2px;
+                    margin-right: 5px;
+
+                    @include responsive(pc-screens) {
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            border-bottom: 2px solid rgba(66,45,19,0.8);
+            padding-bottom: 5px;
+            padding-top: 15px;
+            color: $base_color_dark;
+            font-family: $common_font;
+
+            @include responsive(pc-screens) {
+                //
+            }
+
+            &::placeholder {
+                font-family: $common_font;
+                color: rgba(66,45,19,0.8);
+
+                @include responsive(pc-screens) {
+                    //
+                }
+            }
+        }
+    } //.label_input
+}
+
+
+
+@mixin mypage_btngrp_margin {
+    margin-top: $mid_margin_m;
+    padding-bottom: $big_margin_m;
+
+    @include responsive(pc-screens) {
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+}
+
+@mixin mypage_dark_button {
+    background-color: $base_color_dark;
+    width: 100%;
+    border: none;
+    padding: calc(0.5em + 0.5vw) 0;
+    transition: background-color 0.5s;
+
+    &:hover {
+        background-color: rgb(101, 27, 0);
+    }
+
+    @include responsive(pc-screens) {
+        padding: 10px 0px;
+        width: 190px;
+    }
+
+    .btn_flex {
+        align-items: center;
+        margin: 0 auto;
+
+        @include responsive(pc-screens) {
+
+        }
+
+        p {
+            @include type_custom(calc(1em + 1vw),$common_font);
+            font-weight: 300;
+            color: $base_color_light;
+
+            @include responsive(pc-screens) {
+                font-size: $mainf;
+            }
+        }
+
+    
+    }
+}
+
+@mixin mypage_light_button {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid $base_color_dark;
+    padding: calc(0.5em + 0.5vw) 0;
+    transition: background-color 0.5s;
+
+    &:hover {
+        background-color: $base_color_dark;
+
+        & .btn_flex p {
+            color: $base_color_light;
+        }
+    }
+
+    @include responsive(pc-screens) {
+        padding: 10px 0px;
+        width: 190px;
+    }
+
+    .btn_flex {
+        text-align: center;
+        margin: 0 auto;
+
+        @include responsive(pc-screens) {
+        }
+
+        p {
+            @include type_custom(calc(1em + 1vw),$common_font);
+            font-weight: 300;
+            color: $base_color_dark;
+
+            @include responsive(pc-screens) {
+                font-size: $mainf;
+            }
+        }
+    
+    }
+}
+
+@mixin modal_btngrp_margin {
+    margin-top: $mid_margin_m;
+    padding-bottom: $big_margin_m;
+
+    @include responsive(pc-screens) {
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+}
+
+@mixin modal_dark_button {
+    background-color: $base_color_dark;
+    width: 100%;
+    border: none;
+    padding: calc(0.5em + 0.5vw) 0;
+    transition: background-color 0.5s;
+
+    &:hover {
+        background-color: rgb(101, 27, 0);
+    }
+
+    @include responsive(pc-screens) {
+        padding: 10px 0px;
+    }
+
+    .btn_flex {
+        align-items: center;
+        margin: 0 auto;
+
+        @include responsive(pc-screens) {
+            width: 17.5%;
+        }
+
+        p {
+            @include type_custom(calc(1em + 1vw),$common_font);
+            font-weight: 300;
+            color: $base_color_light;
+
+            @include responsive(pc-screens) {
+                font-size: $mainf;
+            }
+        }
+
+    
+    }
+}
+
+@mixin modal_light_button {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid $base_color_dark;
+    padding: calc(0.5em + 0.5vw) 0;
+    transition: background-color 0.5s;
+
+    &:hover {
+        background-color: $base_color_dark;
+
+        & .btn_flex p {
+            color: $base_color_light;
+        }
+    }
+
+    @include responsive(pc-screens) {
+        padding: 10px 0px;
+    }
+
+    .btn_flex {
+        text-align: center;
+        margin: 0 auto;
+
+        @include responsive(pc-screens) {
+            width: 20%;
+        }
+
+        p {
+            @include type_custom(calc(1em + 1vw),$common_font);
+            font-weight: 300;
+            color: $base_color_dark;
+
+            @include responsive(pc-screens) {
+                font-size: $mainf;
+            }
+        }
+    
+    }
+}
+
+//======================footer 부분(조장 허락 외에 손대지 말 것)=====================//
+
+@mixin footer_h4{ 
+    h4{
+        font: {
+            family: $eng_title_font;
+            size: calc(0.8em + 1vw);
+        }
+        letter-spacing: 3px;
+        color: #ffef5a;
+        margin-bottom: 2vw;
+
+        @include responsive(pc-screens) {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@mixin footer_h5{
+    h5{
+        font: {
+            family: $eng_title_font;
+            size: 1em;
+        }
+        letter-spacing: 3px;
+        color: #ffef5a;
+        margin-bottom: 1.5vw;
+
+        @include responsive(pc-screens){
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+@mixin footer_label{
+    font: {
+        family: $eng_title_font;
+        size: calc(0.5em + 0.5vw);
+    }
+    letter-spacing: 2px;
+
+    @include responsive(pc-screens) {
+        font-size: 14px;
+    }
+    color: #ffef5a;
+}
+

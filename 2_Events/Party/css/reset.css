@@ -1,0 +1,88 @@
+html {
+  overflow: overlay;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+html::-webkit-scrollbar {
+  width: 8px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 82, 190, 0.8);
+  border-radius: 8px;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333333;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.wrapper {
+  width: 100%;
+  color: #333333;
+}
+
+.container {
+  width: 89.7435897436%;
+  position: relative;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 100%;
+  }
+}
+
+a {
+  display: block;
+  color: #333333;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: 7.5em;
+  font-weight: 300;
+  font-family: "SCoreDream";
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}

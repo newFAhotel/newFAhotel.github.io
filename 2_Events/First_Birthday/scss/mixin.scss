@@ -1,0 +1,176 @@
+@import "./style.scss";
+
+@mixin responsive($break) {
+  // 지원 최소 크기 320px
+  @if $break == mobile-screens {
+    @media screen and (min-width: $break-mobile) {
+      @content;
+    }
+  } @else if $break == screen-800 {
+    // 이것은 br을 없애기 위해 사용된 값입니다. 사용 시 조장에 허락을 맡으시길 바랍니다.
+    @media screen and (min-width: $break-middle) {
+      @content;
+    }
+  } @else if $break == pc-screens {
+    //중단점 1400px
+    @media screen and (min-width: $break-pc) {
+      @content;
+    }
+  }
+}
+
+@mixin video_matte {
+  //비디오 매트(사진을 어둡게 처리)
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//====================================서브페이지 통일안====================================//
+
+@mixin font_setting {
+  // a나 input 같이 직접적으로 초기화되기 어려운 태그에 사용
+  font: {
+    family: $common_font;
+    weight: 200;
+  }
+}
+
+@mixin title_border($b_width, $b_height, $b_color, $b_margin) {
+  content: "";
+  display: block;
+  width: $b_width;
+  margin: $b_margin auto;
+  border-bottom: $b_height solid $b_color;
+}
+
+@mixin title_border_2($b_width, $b_height, $b_color, $b_margin, $u_margin) {
+  content: "";
+  display: block;
+  width: $b_width;
+  margin: 0 0 $u_margin $b_margin;
+  border-bottom: $b_height solid $b_color;
+}
+
+@mixin title_border_pc($b_margin, $u_margin) {
+  margin: 0 0 $u_margin $b_margin;
+}
+
+@mixin type_custom($t_size, $t_font) {
+  font: {
+    family: $t_font;
+    size: $t_size;
+  }
+}
+
+@mixin sub_h3 {
+  // margin-bottom: 50px;
+  text-align: center;
+  @include type_custom(2.5em, $eng_title_font);
+  // margin-top: 125px;
+
+  @include responsive(pc-screens) {
+    font-size: 5em;
+    // margin-bottom: 75px;
+    // margin-top: 200px;
+  }
+}
+
+//======================footer 부분(조장 허락 외에 손대지 말 것)=====================//
+
+@mixin footer_h4 {
+  h4 {
+    letter-spacing: 3px;
+    color: #ffef5a;
+    margin-bottom: 2vw;
+
+    @include responsive(pc-screens) {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+    font: {
+      family: $eng_title_font;
+      size: calc(0.8em + 1vw);
+    }
+  }
+}
+
+@mixin footer_h5 {
+  h5 {
+    letter-spacing: 3px;
+    color: #ffef5a;
+    margin-bottom: 1.5vw;
+
+    @include responsive(pc-screens) {
+      margin-bottom: 20px;
+    }
+    font: {
+      family: $eng_title_font;
+      size: 1em;
+    }
+  }
+}
+
+@mixin footer_label {
+  letter-spacing: 2px;
+  color: #ffef5a;
+
+  @include responsive(pc-screens) {
+    font-size: 14px;
+  }
+  font: {
+    family: $eng_title_font;
+    size: calc(0.5em + 0.5vw);
+  }
+}
+
+// ===============================================================
+@mixin mb-small-btn {
+  //width만 다름
+  width: 43.5897vw;
+  max-width: 170px;
+  height: calc(43.5897vw * 0.3176);
+  line-height: min(calc(43.5897vw * 0.2941), 50px);
+  font-weight: 400;
+  font-size: min(4.1026vw, 16px);
+  text-align: center;
+  background-color: #fff;
+  color: #ffb400;
+  border: #ffb400 solid 1px;
+  max-height: 54px;
+  border-radius: min(1.2821vw, 5px);
+  transition: 300ms ease;
+
+  &:first-of-type {
+    margin-right: min(2.5641vw, 10px);
+  }
+
+  &:hover {
+    background-color: #ffb400;
+    color: #fff;
+  }
+}
+
+@mixin mb-large-btn {
+  //width만 다름
+  width: 89.7436vw;
+  max-width: 350px;
+  height: calc(43.5897vw * 0.3176);
+  line-height: min(calc(43.5897vw * 0.2941), 50px);
+  font-weight: 400;
+  font-size: min(4.1026vw, 16px);
+  text-align: center;
+  background-color: #fff;
+  color: #ffb400;
+  border: #ffb400 solid 1px;
+  max-height: 54px;
+  border-radius: min(1.2821vw, 5px);
+  transition: 300ms ease;
+
+  &:hover {
+    background-color: #ffb400;
+    color: #fff;
+  }
+}
