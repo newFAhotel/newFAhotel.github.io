@@ -8,7 +8,6 @@ function rollingNumber() {
     let today = new Date();
     let gap=(today.getTime()-open.getTime());
     let $days=Math.ceil(gap/(1000*60*60*24));
-    console.log(today);
 
     var $employees= 936;
     var $rooms = 324;

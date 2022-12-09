@@ -26,7 +26,6 @@ $(document).ready(function() {
                 $(`.room_navi li:nth-child(${count})`).removeClass('locate');
             }
             
-            console.log(count);
             count++;
             if(count==4) count=1;
         }

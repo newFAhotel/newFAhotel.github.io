@@ -12,7 +12,6 @@ $(document).ready(function() {
             // $('.faci_back').slideUp(500).slideDown(500);
 
             var $width=$('.faci_back').outerWidth()*(-1);
-                console.log($width);
                 
                 $('.faci_back').slideUp(500).slideDown(500);
 
@@ -56,7 +55,6 @@ $(document).ready(function() {
                 $(`.faci_navi li:nth-child(${count})`).removeClass('locate');
             }
             
-            console.log(count);
             count++;
             if(count==4) count=1;
         }

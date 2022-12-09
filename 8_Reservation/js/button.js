@@ -67,7 +67,6 @@ $(document).ready(function() {
     $('.paymont .paytype li').on('click', function() {
 
         $('.paymont .paytype li').removeClass();
-        console.log($(this).hasClass('thick'));
 
 
         if($(this).hasClass('thick')) {

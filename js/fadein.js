@@ -1,6 +1,5 @@
 function fadein() {
     var $height=$('h2').outerHeight()*(-1);
-        console.log($height);
 
 
 

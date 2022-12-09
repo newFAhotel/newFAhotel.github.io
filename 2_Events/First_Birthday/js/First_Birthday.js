@@ -297,7 +297,6 @@
       let morebtn = $('.s3-btns a').map((i, e) => {
         if ($(e).text() === "자세히 보기") return e
       })
-      console.log(morebtn);
 
       morebtn.each((i, e) => {
         $(e).on('click', (el) => {

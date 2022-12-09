@@ -36,7 +36,6 @@ $(document).ready(function() {
 
     $('.submit button div').on('click', function(e) {
         e.preventDefault();
-        console.log('버튼 눌렀다!');
 
         if($('.faq_input input').val().length<1) {
             alert('문의 제목을 입력해 주세요!');

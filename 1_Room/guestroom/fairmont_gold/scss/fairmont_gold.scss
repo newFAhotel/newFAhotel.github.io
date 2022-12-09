@@ -447,7 +447,7 @@
     
                         @include responsive(pc-screens) {
                             // background-color: deeppink;
-                            font-size: 28px;
+                            font-size: 24px;
                             letter-spacing: 2px;
                             margin-bottom: 100px;
                             width: 25%;
@@ -500,7 +500,7 @@
     
                             @include responsive(pc-screens) {
                                 // background-color: deeppink;
-                                font-size: 28px;
+                                font-size: 24px;
                                 letter-spacing: 2px;
                                 margin-bottom: 100px;
                                 width: 25%;
@@ -728,10 +728,10 @@ header{
             .menu_type{                
                 p{
                     font-family: $eng_title_font, sans-serif;
-                    font-size: 1em;
+                    font-size: 16px;
             
                     @include responsive(pc-screens){
-                        font-size: 1.2em;
+                        font-size: 19.2px;
                     }
                     
                 }

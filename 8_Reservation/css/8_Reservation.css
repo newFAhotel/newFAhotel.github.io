@@ -161,7 +161,7 @@ li {
 .menu_modal .menu_entire .menu_header .menu_header_flex .menu_header_left .menu_lan label {
   color: white;
   letter-spacing: 1px;
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: 1em;
 }
 @media screen and (min-width: 1400px) {
@@ -202,7 +202,7 @@ li {
 }
 .menu_modal .menu_entire .menu_header .menu_header_flex .menu_header_left .menu_sns {
   order: 1;
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: 1em;
   letter-spacing: 1px;
 }
@@ -259,7 +259,7 @@ li {
   }
 }
 .menu_modal .menu_entire .menu_header .menu_header_flex .menu_header_right .menu_login a p {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: 1em;
   color: white;
   letter-spacing: 1px;
@@ -313,7 +313,7 @@ li {
 }
 @media screen and (min-width: 1400px) {
   .menu_modal .menu_entire .menu_header .menu_header_flex .menu_header_right .menu_close p {
-    font-family: "Lemon/Milk light", sans-serif;
+    font-family: "LEMON MILK Light";
     font-size: 1em;
     color: white;
     letter-spacing: 1px;
@@ -447,7 +447,7 @@ li {
   }
 }
 .menu_modal .menu_entire .menu_main .menu_main_right .menu_bighead li.big_menu {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(16px + 2vw);
   letter-spacing: 1px;
   margin-bottom: 50px;
@@ -455,7 +455,7 @@ li {
 }
 @media screen and (min-width: 1400px) {
   .menu_modal .menu_entire .menu_main .menu_main_right .menu_bighead li.big_menu {
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 100px;
     width: 25%;
@@ -497,7 +497,7 @@ li {
   }
 }
 .menu_modal .menu_entire .menu_main .menu_main_right .menu_bighead li.big_menu > a {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(16px + 2vw);
   margin-bottom: 50px;
 }
@@ -512,7 +512,7 @@ li {
 }
 @media screen and (min-width: 1400px) {
   .menu_modal .menu_entire .menu_main .menu_main_right .menu_bighead li.big_menu > a {
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 100px;
     width: 25%;
@@ -709,12 +709,12 @@ header .header_entire .menu .menu_bar span:nth-child(3) {
   bottom: 0;
 }
 header .header_entire .menu .menu_type p {
-  font-family: "Lemon/Milk light", sans-serif, sans-serif;
-  font-size: 1em;
+  font-family: "LEMON MILK Light", sans-serif;
+  font-size: 16px;
 }
 @media screen and (min-width: 1400px) {
   header .header_entire .menu .menu_type p {
-    font-size: 1.2em;
+    font-size: 19.2px;
   }
 }
 
@@ -763,7 +763,7 @@ section div.main0 .main0_contents {
   transform: translate(-50%, -50%);
 }
 section div.main0 .main0_contents h2 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(1.5em + 3vw);
   letter-spacing: 2px;
   color: white;
@@ -863,7 +863,7 @@ section div.main0 .mouse img {
 }
 section div.main0 .mouse p {
   transform: translateX(-50%);
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   letter-spacing: 1px;
   color: white;
 }
@@ -947,7 +947,7 @@ main .bighead .image_area .titlearea {
   }
 }
 main .bighead .image_area .titlearea h1 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(2em + 3vw);
   color: #fefdf0;
   letter-spacing: 2px;
@@ -995,7 +995,7 @@ main .bighead .contents_area .book_flex .book_left {
   width: 100%;
 }
 main .bighead .contents_area .book_flex .book_left h4 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(0.5em + 3vw);
   margin-bottom: calc(0.5em + 2vw);
   text-align: center;
@@ -1106,7 +1106,7 @@ main .bighead .contents_area .book_flex .book_left .check ul li .label_input lab
   }
 }
 main .bighead .contents_area .book_flex .book_left .check ul li .label_input label p span {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(10px + 0.8vw);
   letter-spacing: 2px;
   margin-right: 5px;
@@ -1222,7 +1222,7 @@ main .bighead .contents_area .book_flex .book_left .room_guest ul li .dial input
   border: none;
   outline: none;
   height: 20px;
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(12px + 0.5vw);
   text-align: center;
 }
@@ -1293,7 +1293,7 @@ main .bighead .contents_area .book_flex .book_left .room_type ul li img {
 main .bighead .contents_area .book_flex .book_left .room_type ul li em {
   font-style: normal;
   display: block;
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(10px + 0.5vw);
   font-weight: 400;
   margin-top: 10px;
@@ -1305,7 +1305,7 @@ main .bighead .contents_area .book_flex .book_left .room_type ul li em {
   }
 }
 main .bighead .contents_area .book_flex .book_left .room_type ul li p {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(10px + 0.5vw);
   font-weight: 400;
   margin-bottom: 10%;
@@ -1321,7 +1321,7 @@ main .bighead .contents_area .book_flex .book_right {
   width: 100%;
 }
 main .bighead .contents_area .book_flex .book_right h4 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(0.5em + 3vw);
   margin-bottom: calc(0.5em + 2vw);
   text-align: center;
@@ -1417,7 +1417,7 @@ main .bighead .contents_area .book_flex .book_right .paymont .paytype ul li img 
 main .bighead .contents_area .book_flex .book_right .paymont .paytype ul li em {
   font-style: normal;
   display: block;
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(10px + 0.5vw);
   font-weight: 400;
   margin-top: 10px;
@@ -1788,7 +1788,7 @@ footer .footer_entire .subscribe {
   order: 3;
 }
 footer .footer_entire .subscribe h4 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(0.8em + 1vw);
   letter-spacing: 3px;
   color: #ffef5a;
@@ -1825,7 +1825,7 @@ footer .footer_entire .subscribe form .form_flex .form_email {
   }
 }
 footer .footer_entire .subscribe form label {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(0.5em + 0.5vw);
   letter-spacing: 2px;
   color: #ffef5a;
@@ -1897,7 +1897,7 @@ footer .footer_entire .navigation {
   order: 2;
 }
 footer .footer_entire .navigation h4 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(0.8em + 1vw);
   letter-spacing: 3px;
   color: #ffef5a;
@@ -1961,7 +1961,7 @@ footer .footer_entire .address {
   padding-bottom: 2vw;
 }
 footer .footer_entire .address h4 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: calc(0.8em + 1vw);
   letter-spacing: 3px;
   color: #ffef5a;
@@ -1999,7 +1999,7 @@ footer .footer_entire .address address {
   }
 }
 footer .footer_entire .address .copyright h5 {
-  font-family: "Lemon/Milk light", sans-serif;
+  font-family: "LEMON MILK Light";
   font-size: 1em;
   letter-spacing: 3px;
   color: #ffef5a;

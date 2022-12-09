@@ -10,7 +10,6 @@ $(function() {
         $(".qna_icon li").removeClass("thick");
         $(this).addClass("thick");
         var link = $(this).attr("rel");
-        console.log(link);
 
         if($("#"+link).siblings().is(':visible')) {
             $("#"+link).siblings().slideUp(500);

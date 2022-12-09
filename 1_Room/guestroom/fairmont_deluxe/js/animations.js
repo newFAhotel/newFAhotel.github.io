@@ -80,7 +80,7 @@ $(document).ready(function() {
 
         }
 
-        if($(this).scrollTop()>h3_ttop-$(this).innerHeight()/7.5) {
+        if($(this).scrollTop()>h3_ttop-$(this).innerHeight()/5) {
             
             $('h3.type').animate({
                 'opacity': 1,

@@ -23,7 +23,6 @@ $(document).ready(function() {
                     $(`.gall_navi li:nth-child(${count}) span`).removeClass('longer');
                 }
                 
-                // console.log(count);
                 count++;
                 if(count==4) count=1;
             }

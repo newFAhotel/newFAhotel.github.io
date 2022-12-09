@@ -1,16 +1,13 @@
 html {
   overflow: overlay;
 }
-
 html::-webkit-scrollbar {
   width: 8px;
 }
-
 html::-webkit-scrollbar-thumb {
   background-color: rgba(138, 113, 75, 0.8);
   border-radius: 8px;
 }
-
 html::-webkit-scrollbar-track {
   border-radius: 8px;
 }
@@ -34,12 +31,11 @@ body {
 }
 
 .container {
-  width: 89.74358974358974%;
+  width: 89.7435897436%;
   position: relative;
   max-width: 1380px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 1400px) {
   .container {
     width: 100%;
