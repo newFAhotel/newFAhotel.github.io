@@ -40,6 +40,19 @@ window.addEventListener('load', function(){
         playAnim()
         }, isAdding ? 120 : 60)
     }
-    playAnim()
+    playAnim();
+
+
+    $('.contents .din').on('click', function() {
+        location.href='./5_Dining/5_Dining.html';
+    });
+
+    $('.contents .prom').on('click', function() {
+        location.href='./4_SpecialOffer/4_SpecialOffer.html';
+    });
+
+    $('.contents .event').on('click', function() {
+        location.href='./2_Events/Wedding/Wedding.html';
+    });
 });
 

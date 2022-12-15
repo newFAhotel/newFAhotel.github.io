@@ -2125,7 +2125,7 @@ main .other_room .other_ent div .matte h5 {
 }
 @media screen and (min-width: 1400px) {
   main .other_room .other_ent div .matte h5 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 main .other_room .other_ent div .matte h5.red::before {

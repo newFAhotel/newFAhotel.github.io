@@ -1177,8 +1177,8 @@ main .room_gall .gall_main ul li {
   }
 }
 main .room_gall .gall_main ul li img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 main .room_gall .gall_main ul li img.small_img {
@@ -2125,7 +2125,7 @@ main .other_room .other_ent div .matte h5 {
 }
 @media screen and (min-width: 1400px) {
   main .other_room .other_ent div .matte h5 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 main .other_room .other_ent div .matte h5.red::before {

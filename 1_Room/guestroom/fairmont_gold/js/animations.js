@@ -23,8 +23,6 @@ $(document).ready(function() {
     });
 
 
-
-
     let h3_ftop = $('h3.first').offset().top;
     let re_top=$('.room_entire').offset().top;
     let h3_ltop = $('h3.last').offset().top;
@@ -33,11 +31,6 @@ $(document).ready(function() {
     let h3_ntop = $('h3.notc').offset().top;
     let h3_otop = $('h3.oroom').offset().top;
 
-
-
-
-
-    
 
 
     $(window).scroll(function() {
@@ -151,10 +144,6 @@ $(document).ready(function() {
 
 
     });
-
-
-
-
 
 
     // $('h3.first').animate( {

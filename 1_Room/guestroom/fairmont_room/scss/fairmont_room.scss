@@ -2125,7 +2125,7 @@ main {
                             @include type_custom(calc(1em + 1vw),$eng_title_font);
                             
                             @include responsive(pc-screens) {
-                                font-size: 2em;
+                                font-size: 1.5em;
                             }
 
                             &.red {

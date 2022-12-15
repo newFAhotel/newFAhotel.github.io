@@ -250,20 +250,20 @@ $('.right-btn').on('click', () => {
 //modal - push img & pop up modal 
 let mdImgs = [
   [
-    "./img/Wedding/photo/s2_modal1.png",
-    "./img/Wedding/photo/s2_modal2.png",
-    "./img/Wedding/photo/s2_modal3.png",
+    "./img/Wedding/photo/s2_modal1.jpg",
+    "./img/Wedding/photo/s2_modal2.jpg",
+    "./img/Wedding/photo/s2_modal3.jpg",
   ],
   [
-    "./img/Wedding/photo/s3_modal1.png",
-    "./img/Wedding/photo/s3_modal2.png",
-    "./img/Wedding/photo/s3_modal3.png",
+    "./img/Wedding/photo/s3_modal1.jpg",
+    "./img/Wedding/photo/s3_modal2.jpg",
+    "./img/Wedding/photo/s3_modal3.jpg",
   ],
 
   [
-    "./img/Wedding/photo/s4_modal1.png",
-    "./img/Wedding/photo/s4_modal2.png",
-    "./img/Wedding/photo/s4_modal3.png",
+    "./img/Wedding/photo/s4_modal1.jpg",
+    "./img/Wedding/photo/s4_modal2.jpg",
+    "./img/Wedding/photo/s4_modal3.jpg",
   ]
 ]
 

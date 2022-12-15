@@ -134,25 +134,25 @@
       //modal - push img & pop up modal 
       let mdImgs = [
         [
-          "./img/Party/photo/preview-1.png",
+          "./img/Party/photo/preview-1.jpg",
           "./img/Party/photo/preview-2.jpg",
-          "./img/Party/photo/preview-3.png",
+          "./img/Party/photo/preview-3.jpg",
         ],
         [
-          "./img/Party/photo/header-banner.png",
-          "./img/Party/photo/infomation_img.png",
-          "./img/Party/photo/preview-1.png",
+          "./img/Party/photo/header-banner.jpg",
+          "./img/Party/photo/infomation_img.jpg",
+          "./img/Party/photo/preview-1.jpg",
         ],
         [
-          "./img/Party/photo/s3_modal1.png",
-          "./img/Party/photo/s3_modal2.png",
-          "./img/Party/photo/s3_modal3.png",
+          "./img/Party/photo/s3_modal1.jpg",
+          "./img/Party/photo/s3_modal2.jpg",
+          "./img/Party/photo/s3_modal3.jpg",
         ],
 
         [
-          "./img/Party/photo/s2_modal1.png",
-          "./img/Party/photo/s2_modal2.png",
-          "./img/Party/photo/s2_modal3.png",
+          "./img/Party/photo/s2_modal1.jpg",
+          "./img/Party/photo/s2_modal2.jpg",
+          "./img/Party/photo/s2_modal3.jpg",
         ]
       ]
 

@@ -1193,8 +1193,8 @@ main {
                     }
 
                     img {
-                        width: 100%;
-                        height: 100%;
+                        width: 50%;
+                        height: 50%;
                         object-fit: cover;
 
                         &.small_img {
@@ -2127,7 +2127,7 @@ main {
                             @include type_custom(calc(1em + 1vw),$eng_title_font);
                             
                             @include responsive(pc-screens) {
-                                font-size: 2em;
+                                font-size: 1.5em;
                             }
 
                             &.red {

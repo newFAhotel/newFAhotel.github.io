@@ -278,7 +278,7 @@
       let mdImgs = [
         [
           "./img/First_Birthday/photo/preview-5.jpg",
-          "./img/First_Birthday/photo/preview-4.png",
+          "./img/First_Birthday/photo/preview-4.jpg",
           "./img/First_Birthday/photo/s2-3.jpg",
         ],
       ]

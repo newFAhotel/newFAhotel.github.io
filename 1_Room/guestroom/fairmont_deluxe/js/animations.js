@@ -11,7 +11,7 @@ $(document).ready(function() {
         'top': '-100px'
     });
 
-    $('h3.gall, h3.type, .types_flex, h3.notc, h3.oroom').css({
+    $('h3.gall, h3.type, .room_gnb, .three_types, h3.notc, h3.oroom').css({
         'opacity': '0',
         'top': '-50px',
         'position': 'relative'
@@ -23,7 +23,6 @@ $(document).ready(function() {
     });
 
 
-
     let h3_ftop = $('h3.first').offset().top;
     let re_top=$('.room_entire').offset().top;
     let h3_ltop = $('h3.last').offset().top;
@@ -31,6 +30,8 @@ $(document).ready(function() {
     let h3_ttop = $('h3.type').offset().top;
     let h3_ntop = $('h3.notc').offset().top;
     let h3_otop = $('h3.oroom').offset().top;
+
+
 
     $(window).scroll(function() {
         
@@ -87,7 +88,12 @@ $(document).ready(function() {
                 'top': 0
             },500);
 
-            $('.types_flex').delay(500).animate({
+            $('.room_gnb').delay(500).animate({
+                'opacity': 1,
+                'top': 0
+            },1000);
+
+            $('.three_types').delay(1000).animate({
                 'opacity': 1,
                 'top': 0
             },1000);
@@ -135,21 +141,9 @@ $(document).ready(function() {
 
         }
 
-        if($(this).scrollTop()>rs_top-$(this).innerHeight()) {
-            
-            $('.room_smoke img').animate({
-                'top': 200
-            },500);
-
-
-        }
 
 
     });
-
-
-
-
 
 
     // $('h3.first').animate( {
